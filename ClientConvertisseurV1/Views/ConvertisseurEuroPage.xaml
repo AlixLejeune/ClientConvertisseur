@@ -7,15 +7,44 @@
     xmlns:local="using:ClientConvertisseurV1.Views"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+    DataContext="ConvertisseurEuroPage"
     mc:Ignorable="d">
 
     <RelativePanel>
-        <TextBlock />
-        <TextBlock />
-        <TextBlock />
-        <ComboBox />
-        <TextBox />
-        <TextBox IsReadOnly="True" />
-        <Button />
+        <TextBlock
+            Margin="0,50,0,0"
+            FontSize="24"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Convertisseur" />
+        <TextBlock
+            Margin="0,100,0,0"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Montant en euros" />
+        <TextBox
+            Margin="0,150,0,0"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="{Binding tbEuros, Mode=TwoWay}" />
+        <TextBlock
+            Margin="0,200,0,0"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Devise" />
+        <ComboBox
+            Margin="0,240,0,0"
+            ItemsSource="{Binding lesDevises, Mode=TwoWay}"
+            RelativePanel.AlignHorizontalCenterWithPanel="True" />
+        <Button
+            Margin="0,290,0,0"
+            Content="Convertir"
+            RelativePanel.AlignHorizontalCenterWithPanel="True" />
+        <TextBlock
+            Margin="0,330,0,0"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="Montant en devises" />
+        <TextBox
+            Margin="0,380,0,0"
+            IsReadOnly="True"
+            RelativePanel.AlignHorizontalCenterWithPanel="True"
+            Text="{Binding tbConvert, Mode=TwoWay}" />
+
     </RelativePanel>
 </Page>

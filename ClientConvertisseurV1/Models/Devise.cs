@@ -26,5 +26,10 @@ namespace ClientConvertisseurV1.Models
                    NomDevise == devise.NomDevise &&
                    Taux == devise.Taux;
         }
+
+        public override string ToString()
+        {
+            return this.NomDevise;
+        }
     }
 }
