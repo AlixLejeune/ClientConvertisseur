@@ -33,7 +33,7 @@
             Width="150"
             Margin="0,240,0,0"
             DisplayMemberPath="NomDevise"
-            ItemsSource="{Binding LesDevises.NomDevise, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+            ItemsSource="{Binding LesDevises, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
             RelativePanel.AlignHorizontalCenterWithPanel="True" />
         <Button
             Width="150"
