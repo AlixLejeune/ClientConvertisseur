@@ -9,7 +9,7 @@ namespace ClientConvertisseurV1.Models
         private double taux;
 
         public int Id { get => id; set { id = value; } }
-        public string? NomDevise { get => nomDevise; set { nomDevise = value; } }
+        public string NomDevise { get => nomDevise; set { nomDevise = value; } }
         public double Taux { get => taux; set { taux = value; } }
 
         public Devise(int id, string? nomDevise, double taux)
